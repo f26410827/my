@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自傳</title>
+    <style>
+        html {
+            perspective: 800px;
+        }
+        body {
+            background-image: url(./images/cat8.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        .cube {
+            width: 498px;
+            height: 498px;
+            margin: 350px auto;
+            transform-style: preserve-3d;
+            /* transform: rotateX(45deg) rotateZ(45deg); */
+            animation: rotate 20s infinite linear;
+        }
+
+        h1 {
+            margin: 50 auto;
+            color: aliceblue;
+        }
+
+        h2 {
+            margin: 10;
+            float: left;
+            color: aliceblue;
+        }
+        .cube>div {
+            width: 498px;
+            height: 498px;
+            opacity: 0.9;
+            position: absolute;
+
+        }
+        img {
+            /* img >.box1>.box2>.box3>.box4>.box5>.box6{ */
+            vertical-align: top;
+        }
+
+        .box1 {
+            transform: rotateY(90deg) translateZ(249px);
+        }
+
+        .box2 {
+            transform: rotateY(-90deg) translateZ(249px);
+        }
+
+        .box3 {
+            transform: rotateX(90deg) translateZ(249px);
+        }
+
+        .box4 {
+            transform: rotateX(-90deg) translateZ(249px);
+        }
+
+        .box5 {
+            transform: rotateY(180deg) translateZ(249px);
+        }
+
+        .box6 {
+            transform: rotateY(0deg) translateZ(249px);
+        }
+        @keyframes rotate {
+            form {
+                transform: rotateX(0) rotateZ(0);
+            }
+
+            to {
+                transform: rotateX(1turn) rotateZ(1turn);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio src="./images/song.mp3" controls autoplay loop></audio>
+    <h1>我的自傳</h1>
+    <h2>
+        您好,我叫郭權賢,現年32歲,居住於汐止,因父母皆為殘障人士,</br>
+        從國中便開始分擔家計,因此很獨立負責。</br>
+        高中時期,考取了許多的電腦證照,</br>
+        有JAVAOCA證照、TQC+:網頁資料擷取與分析-專業級(Python 3)、</br>
+        程式語言-專業級(Python 3)、</br>
+        TQC-Word、Excel、PPT、無蝦米輸入法55/分、電腦軟體應用丙、乙級,對於office辦公軟體相當熟析</br>
+        也有電腦行政文書方面的工作經驗,會計方面證照有:會計事務丙級。</br>
+        因家中信仰基督教的緣故,常常跟教會到醫院接觸病人,</br>
+        所以養成了外向、樂觀的個性,沒有養成不良的嗜好,不酒不檳榔,</br>
+        高中及大學時期也當過志工,在安養院照顧老人,替獨居老人送中餐,</br>
+        我的個性隨和,樂觀積極,容易與人相處,因此建立了良好的人際關係;</br>
+        在工作上有不懂的一定開口問,抱持著多學習多累積經驗的態度,</br>
+        希望能夠使自己增進,對於差遣事務只要是能力許可,絕不推託，</br>
+        我沒有很高的學歷但我有很多的社會經驗，</br>
+        良好的環境適應能力以及學習能力，堅韌的抗壓性。</br>
+        曾任職過華碩Eee PC行政工讀生、線上文字客服人員、</br>
+        SMT廠領班、hTC設備工程師、擔任公司福委會主委主辦時過一百人以上員工旅行,</br>
+        各項節日活動及尾牙活動聚餐,</br>
+        盼望能在工作上有面試及表現的機會。</br>
+    </h2>
+            <div class="cube">
+                <div class="box1">
+                    <img src="./images/cat1.jpg" alt="">
+                </div>
+                <div class="box2">
+                    <img src="./images/cat2.jpg" alt="">
+                </div>
+                <div class="box3">
+                    <img src="./images/cat3.jpg" alt="">
+                </div>
+                <div class="box4">
+                    <img src="./images/cat4.jpg" alt="">
+                </div>
+                <div class="box5">
+                    <img src="./images/cat5.jpg" alt="">
+                </div>
+                <div class="box6">
+                    <img src="./images/cat6.jpg" alt="">
+                </div>
+
+</body>
+
+</html>
